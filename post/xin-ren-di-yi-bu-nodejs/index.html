@@ -383,15 +383,17 @@ npm config get registry
   
     <section class="comment-section">
   <h2 class="comment-section__title">评论</h2>
-  <div id="cusdis_thread"
-    data-host="https://cusdis.com"
-    data-app-id="3b2a457c-1559-4620-90a5-e11d398062f2"
-    data-page-id="xin-ren-di-yi-bu-nodejs"
-    data-page-url="/post/xin-ren-di-yi-bu-nodejs/"
-    data-page-title="新人第一步 node.js"
-    data-theme="dark">
-  </div>
-  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <div id="waline"></div>
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({
+      el: '#waline',
+      serverURL: 'pinglun-50lmnvvk5-guojialelexiaoguo123-clouds-projects.vercel.app',
+      dark: true,
+      locale: { placeholder: '说点什么吧…' }
+    });
+  </script>
 </section>
 
   
