@@ -418,6 +418,23 @@
 
 
 
+<div id="comments" class="cf">
+    <div class="comments-header">留言</div>
+    <div id="waline"></div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+        el: '#waline',
+        serverURL: 'pinglun-50lmnvvk5-guojialelexiaoguo123-clouds-projects.vercel.app',
+    });
+</script>
+
+
+
 <!-- Reading Progress Component -->
 <div class="reading-progress-container">
   <span class="reading-label">阅读进度</span>
