@@ -1,53 +1,78 @@
+
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="auto" class="not-loaded">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="generator" content="Gridea Pro · Liushen Theme">
-  <meta name="generator" content="Gridea Pro 1.2.2">
-  <title># | Guo&#39;blog</title>
-  <meta name="description" content="Welcome to GUO">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Guo&#39;blog">
-  <meta property="og:description" content="Welcome to GUO">
-  <meta property="og:image" content="/images/avatar.png">
-  <link rel="icon" href="/images/avatar.png" type="image/x-icon">
-  <link rel="alternate" type="application/atom+xml" title="Guo&#39;blog" href="/atom.xml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/styles/main.css">
+    <meta name="generator" content="Gridea Pro 1.2.2">
+    <title>思考 · 标签 · Guo&#39;blog</title>
 
-  <style id="liushen-theme-vars">
-    :root{
-      --primary:#2679cc;
-      --accent:#28df99;
-      --text:rgba(0, 0, 0, 0.86);
-      --card-radius:12px;
-      --body-font:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      --code-font:Consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
-      --sidebar-gradient:linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%);
-      --bg-image-light:url('/media/images/bg-light.svg');
-      --bg-image-dark:url('/media/images/bg-dark.svg');
+    
+    <meta name="description" content="">
+    
+
+    
+    <meta property="og:site_name" content="Guo&#39;blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    
+    <meta property="og:image" content="/images/avatar.png">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <link rel="icon" href="/images/theme/圆角-1780910648519.png">
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="Guo&#39;blog" href="/atom.xml">
+    
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+    
+    <style>
+    :root {
+      --accent: #95c394;
+      --printer-external-link-color: #ff6b35;
+      --printer-post-category-color: #ff6b35;
     }
-  </style>
-  
+    </style>
 
-  <script>
+    
+    <script>
     (function(){
-      var pref="light";
-      try{var saved=localStorage.getItem('liushen-theme');if(saved)pref=saved;}catch(e){}
-      var resolved=pref;
-      if(pref==='auto'){var h=new Date().getHours();resolved=(h>=6&&h<18)?'light':'dark';}
-      document.documentElement.setAttribute('data-theme',resolved);
-      document.documentElement.dataset.themePref=pref;
+      try {
+        var saved = localStorage.getItem('printer-theme-mode');
+        var preset = "light";
+        var theme;
+        if (saved === 'dark' || saved === 'light') {
+          theme = saved;
+        } else if (preset === 'dark' || preset === 'light') {
+          theme = preset;
+        } else {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+        // 字体偏好
+        var fontPref = "serif";
+        if (fontPref === 'sans') {
+          document.documentElement.classList.add('printer-font-sans');
+        }
+      } catch(e) {}
     })();
-  </script>
+    </script>
 
-  
-  
+    
+    
+
+    
 <meta name="description" content="Welcome to GUO">
 <link rel="canonical" href="https://guojialelexiaoguo123-cloud.github.io/tag/si-kao/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Guo'blog","url":"https://guojialelexiaoguo123-cloud.github.io","description":"Welcome to GUO","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://guojialelexiaoguo123-cloud.github.io/search?q={search_term_string}"}}</script>
@@ -63,482 +88,245 @@
 <meta name="twitter:description" content="Welcome to GUO">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
-<body class="page-tag">
-
-  
-  <div id="reading-progress" aria-hidden="true"><span></span></div>
-  
-
-  <div id="web-bg" aria-hidden="true"></div>
-  <div id="sun-moon-cover" aria-hidden="true"></div>
-
-  
-<div id="mobile-sidebar" class="mobile-sidebar" hidden>
-  <div class="mobile-sidebar-backdrop" data-action="close-mobile-menu"></div>
-  <aside class="mobile-sidebar-panel">
-    <header class="mobile-sidebar-header">
-      <img class="mobile-avatar" src="/images/avatar.png" alt="Guo&#39;blog" onerror="this.onerror=null;this.src='/media/images/default-avatar.svg';">
-      <h3 class="mobile-site-name">Guo&#39;blog</h3>
-      <p class="mobile-tagline">Welcome to GUO</p>
-    </header>
-    <nav class="mobile-sidebar-nav" id="mobile-nav-list">
-      
+<body class="tag-detail">
+    <div class="site-wrap">
         
-        <a href="/" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>首页</span></a>
-        
-        <a href="/post" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>博客</span></a>
-        
-        <a href="/memos" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>闪念</span></a>
-        
-        <a href="/archives" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>归档</span></a>
-        
-        <a href="/tags" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>标签</span></a>
-        
-        <a href="/links" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>友链</span></a>
-        
-        <a href="/post/about" class="mobile-nav-item"><i class="fa-fw fa-solid fa-bookmark"></i><span>关于</span></a>
-        
-      
-    </nav>
-    <footer class="mobile-sidebar-footer">
-      
-
-
-
-
-
-<a class="social-icon" href="/atom.xml" title="RSS" rel="noopener"><i class="fa-solid fa-rss"></i></a>
-
-    </footer>
-  </aside>
-</div>
-
-  
-<nav id="nav" class="nav-fixed">
-  <span id="blog-info">
-    <a class="nav-site-title" href="/" title="Guo&#39;blog">
-      
-      <span class="site-name">Guo&#39;blog</span>
-    </a>
-  </span>
-
-  <div id="menus">
-    
-    <div class="menus_items visible">
-      
-        
-          <div class="menus_item">
-            <a class="site-page" href="/"><i class="fa-fw fa-solid fa-bookmark"></i><span> 首页</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/post"><i class="fa-fw fa-solid fa-bookmark"></i><span> 博客</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/memos"><i class="fa-fw fa-solid fa-bookmark"></i><span> 闪念</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/archives"><i class="fa-fw fa-solid fa-bookmark"></i><span> 归档</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/tags"><i class="fa-fw fa-solid fa-bookmark"></i><span> 标签</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/links"><i class="fa-fw fa-solid fa-bookmark"></i><span> 友链</span></a>
-          </div>
-        
-          <div class="menus_item">
-            <a class="site-page" href="/post/about"><i class="fa-fw fa-solid fa-bookmark"></i><span> 关于</span></a>
-          </div>
-        
-      
-    </div>
-  </div>
-
-  <div id="nav-right">
-    
-    <div id="travellings"><a class="site-page" href="https://www.travellings.cn/go.html" title="友链接力 - 随机开往" rel="nofollow noopener" target="_blank"><i class="fa-solid fa-bus fa-fw"></i></a></div>
-    
-    
-    <div id="ten-years"><a class="site-page" href="https://foreverblog.cn/go.html" title="十年之约" rel="nofollow noopener" target="_blank"><i class="fa-brands fa-nfc-symbol fa-fw"></i></a></div>
-    
-    
-    <div id="random"><a class="site-page" href="javascript:void(0);" title="随机文章" data-action="random-post"><i class="fa-solid fa-shuffle fa-fw"></i></a></div>
-    
-    
-    <div id="search-button"><span class="site-page social-icon search" data-action="open-search" title="搜索"><i class="fa-solid fa-magnifying-glass fa-fw"></i></span></div>
-    
-    <div id="theme-switch"><span class="site-page" data-action="toggle-theme" title="切换配色"><i class="fa-solid fa-circle-half-stroke fa-fw"></i></span></div>
-    <div id="toggle-menu"><span class="site-page" data-action="toggle-mobile-menu" title="展开菜单"><i class="fa-solid fa-bars fa-fw"></i></span></div>
-  </div>
-</nav>
-
-
-  <div id="body-wrap" class="wrap-default">
-    
-  
-  
-  
-  
-
-
-
-
-
-  <header id="page-header" class="not-home-page nav-fixed-spacer" style="background-image:url('/media/images/default-top.svg')">
-    <div id="page-site-info">
-      <h1 id="site-title">#</h1>
-      
-    </div>
-    
-      
-<section class="main-hero-waves-area waves-area" aria-hidden="true">
-  <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-      <path id="liushen-gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path>
-    </defs>
-    <g class="parallax">
-      <use xlink:href="#liushen-gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"></use>
-      <use xlink:href="#liushen-gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use>
-      <use xlink:href="#liushen-gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use>
-      <use xlink:href="#liushen-gentle-wave" x="48" y="7" fill="#ffffff"></use>
-    </g>
-  </svg>
-</section>
-
-    
-  </header>
-
-
-
-
-    <main id="content-inner" class="layout layout-with-aside">
-      <div id="content" class="content">
-        
-<section class="tag-detail card-widget">
-  <div class="item-headline"><i class="fa-solid fa-tag"></i><span>标签： · 2 篇</span></div>
-  <div class="article-sort">
-    
-      
-      <div class="archive-year-block">
-        <h3 class="article-sort-item year"></h3>
-        <ul class="article-sort-list">
-          
-          <li class="article-sort-item no-article-cover">
+<header class="printer-top">
+    <div class="top-row">
+        <a class="brand" href="/">
             
-            <div class="article-sort-item-info">
-              <div class="article-sort-item-time"><i class="far fa-calendar-alt"></i> 2026-06-08T16:59:06+08:00</div>
-              <a class="article-sort-item-title" href="/post/about/">关于</a>
-            </div>
-          </li>
-          
-          <li class="article-sort-item no-article-cover">
+            <span class="brand-mark"></span>
             
-            <div class="article-sort-item-info">
-              <div class="article-sort-item-time"><i class="far fa-calendar-alt"></i> 2026-05-04T06:44:43+08:00</div>
-              <a class="article-sort-item-title" href="/post/xie-zai-qi-zhong-kao-shi-hou/">写在期中考试后</a>
+            <span class="brand-text">
+                <h1>Guo&#39;blog</h1>
+                <p>Welcome to GUO</p>
+            </span>
+        </a>
+
+        <div class="power">
+            <div class="power-dot"></div>
+            <span class="power-text power-text-on">ON</span>
+            <span class="power-text power-text-off">OFF</span>
+        </div>
+    </div>
+
+    <div class="menu-row">
+        <nav class="menu" aria-label="主导航">
+            
+                <a href="/" class="">首页</a>
+            
+                <a href="/post" class="">博客</a>
+            
+                <a href="/memos" class="">闪念</a>
+            
+                <a href="/archives" class="">归档</a>
+            
+                <a href="/tags" class="">标签</a>
+            
+                <a href="/links" class="">友链</a>
+            
+                <a href="/post/about" class="">关于</a>
+            
+        </nav>
+
+        <div class="ctrls">
+            
+            <form class="header-search" role="search" onsubmit="return false;">
+                <label class="header-search-label" for="header-search-input">搜索</label>
+                <input id="header-search-input" type="search" name="s" placeholder="搜索文章" autocomplete="off" />
+                <button type="button" class="header-search-btn" aria-label="搜索（Cmd/Ctrl+K）" id="header-search-btn">
+                    <svg viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                        <path d="M6.5 2a4.5 4.5 0 1 1 0 9A4.5 4.5 0 0 1 6.5 2zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+                        <path d="M10.4 10.4a.75.75 0 0 1 1.06 0l2.3 2.3a.75.75 0 1 1-1.06 1.06l-2.3-2.3a.75.75 0 0 1 0-1.06z"></path>
+                    </svg>
+                </button>
+            </form>
+            
+
+            <div class="lang">
+                <span>EN</span>
+                <span class="current">中</span>
             </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-    
-  </div>
-</section>
 
-      </div>
-      
-        
-<aside id="aside-content" class="aside-content">
-  <div class="card-widget-wrap">
-    
-<div class="card-widget card-info">
-  <div class="card-content">
-    <div class="card-info-avatar">
-      <img class="avatar-img" src="/images/avatar.png" alt="Guo&#39;blog" onerror="this.onerror=null;this.src='/media/images/default-avatar.svg';">
+            <button type="button" class="theme-toggle" id="theme-toggle"
+                    aria-label="切换日夜模式"
+                    data-title-light="切换到日间模式"
+                    data-title-dark="切换到夜间模式"></button>
+        </div>
     </div>
-    <div class="card-info-data">
-      <div class="author-info-name">Guo&#39;blog</div>
-      <div class="author-info-description">一个热爱生活的开发者</div>
+</header>
+
+
+
+<div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="站内搜索">
+    <div class="search-modal-content">
+        <div class="search-input-wrapper">
+            <svg viewBox="0 0 16 16" focusable="false" aria-hidden="true">
+                <path d="M6.5 2a4.5 4.5 0 1 1 0 9A4.5 4.5 0 0 1 6.5 2zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+                <path d="M10.4 10.4a.75.75 0 0 1 1.06 0l2.3 2.3a.75.75 0 1 1-1.06 1.06l-2.3-2.3a.75.75 0 0 1 0-1.06z"></path>
+            </svg>
+            <input type="search" id="search-input" class="search-input" placeholder="搜索文章 / 标签 / 闪念..." autocomplete="off" spellcheck="false" aria-label="搜索关键词">
+            <button type="button" class="search-close" id="search-close" aria-label="关闭搜索">&times;</button>
+        </div>
+
+        <div class="search-results" id="search-results" role="listbox" aria-label="搜索结果">
+            <p class="search-empty">输入关键词开始搜索</p>
+        </div>
+
+        <div class="search-shortcuts">
+            <span><kbd>↵</kbd>打开</span>
+            <span><kbd>↑</kbd><kbd>↓</kbd>切换</span>
+            <span><kbd>esc</kbd>关闭</span>
+        </div>
     </div>
-    <div class="card-info-counts">
-      <div class="count-item">
-        <div class="headline">2</div>
-        <div class="length-num">文章</div>
-      </div>
-      <div class="count-item">
-        <div class="headline">3</div>
-        <div class="length-num">标签</div>
-      </div>
-      <div class="count-item">
-        <div class="headline" id="card-info-runtime">--</div>
-        <div class="length-num">天</div>
-      </div>
-    </div>
-    <div class="card-info-social">
-      
-
-
-
-
-
-<a class="social-icon" href="/atom.xml" title="RSS" rel="noopener"><i class="fa-solid fa-rss"></i></a>
-
-    </div>
-  </div>
 </div>
 
-    
-    
-<div class="card-widget card-announcement">
-  <div class="item-headline"><i class="fa-solid fa-bullhorn"></i><span>公告</span></div>
-  <div class="announcement-content">
-    
-    <p>欢迎来访 ✨ 这是一个清羽飞扬的博客</p>
-  </div>
-</div>
 
+
+
+        <main class="paper">
+            
+<h2 class="paper-title">标签：思考</h2>
+<p class="paper-subtitle">共 2 篇文章</p>
+
+<ul class="post-list">
     
-<div class="card-widget card-recent-post">
-  <div class="item-headline"><i class="fa-solid fa-history"></i><span>最新文章</span></div>
-  <div class="aside-list">
-    
-      
         
-        <div class="aside-list-item">
-          
-          <a class="thumbnail no-cover" href="/post/about/" title="关于"><i class="fa-solid fa-file-lines"></i></a>
-          
-          <div class="content">
-            <a class="title" href="/post/about/" title="关于">关于</a>
-            <time class="date">2026-06-08T16:59:06+08:00</time>
-          </div>
+            
+                
+<li class="post-item">
+    <p class="post-date">2026-06-08T16:59:06+08:00</p>
+    <h3 class="post-title">
+        <a href="/post/about/">关于</a>
+    </h3>
+    <p class="post-excerpt">关于我
+嗨，我是 GUO ，一个人，嗯对一个人。
+坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。
+关于我的博客
+我发现自己想的很多事情，不写下来就会忘...</p>
+</li>
+
+            
+        
+            
+                
+<li class="post-item">
+    <p class="post-date">2026-05-04T06:44:43+08:00</p>
+    <h3 class="post-title">
+        <a href="/post/xie-zai-qi-zhong-kao-shi-hou/">写在期中考试后</a>
+    </h3>
+    <p class="post-excerpt">突然发现觉得我们很多人都活得很累
+为什么我们总把一次考试看得那么重
+重到会睡不着觉
+会在考完之后急切的对答案 想知道自己错在哪
+哪怕还没出成绩
+人不该被考试定义...</p>
+</li>
+
+            
+        
+    
+</ul>
+
+        </main>
+
+        
+<footer class="site-footer">
+    <div class="site-footer-card">
+        <div class="site-footer-social">
+            
+            <a href="https://github.com/guojialelexiaoguo123-cloud" class="social-link" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/atom.xml" class="social-link" target="_blank" rel="noopener" title="RSS 订阅" aria-label="RSS">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.736-23.982-23.999-24.004v4.816h-.001z"/></svg>
+            </a>
+            
+        </div>
+
+        <div class="site-footer-divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+        </div>
+
+        <div class="site-footer-copyright">
+            
+                &copy; 2026 Guo&#39;blog
+            
+        </div>
+
+        
+        
+
+        
+        <div class="site-footer-powered">
+            <span>Theme</span>
+            <a href="https://github.com/Ouxxxxxjoe/Printer-Typecho" target="_blank" rel="noopener">Printer</a>
+            <span>·</span>
+            <a href="https://gridea.pro" target="_blank" rel="noopener">Gridea Pro</a>
         </div>
         
-      
-        
-        <div class="aside-list-item">
-          
-          <a class="thumbnail no-cover" href="/post/xie-zai-qi-zhong-kao-shi-hou/" title="写在期中考试后"><i class="fa-solid fa-file-lines"></i></a>
-          
-          <div class="content">
-            <a class="title" href="/post/xie-zai-qi-zhong-kao-shi-hou/" title="写在期中考试后">写在期中考试后</a>
-            <time class="date">2026-05-04T06:44:43+08:00</time>
-          </div>
-        </div>
-        
-      
-    
-  </div>
-</div>
-
-    
-<div class="card-widget card-categories">
-  <div class="item-headline"><i class="fa-solid fa-folder-open"></i><span>分类</span></div>
-  <ul class="card-category-list">
-    
-      <li class="aside-empty">暂无分类</li>
-    
-  </ul>
-</div>
-
-    
-<div class="card-widget card-tags">
-  <div class="item-headline"><i class="fa-solid fa-tags"></i><span>标签云</span></div>
-  <div class="card-tag-cloud">
-    
-      
-        
-          
-          <a href="/tag/getting-started/" title="入门 (1)" class="tag-cloud-item" data-count="1">入门<sup>1</sup></a>
-        
-      
-        
-          
-          <a href="/tag/huan-jing/" title="环境 (1)" class="tag-cloud-item" data-count="1">环境<sup>1</sup></a>
-        
-      
-        
-          
-          <a href="/tag/si-kao/" title="思考 (2)" class="tag-cloud-item" data-count="2">思考<sup>2</sup></a>
-        
-      
-    
-  </div>
-</div>
-
-    
-    
-<div class="card-widget card-webinfo">
-  <div class="item-headline"><i class="fa-solid fa-chart-pie"></i><span>网站统计</span></div>
-  <div class="webinfo">
-    <div class="webinfo-item"><span class="webinfo-label">文章</span><span class="webinfo-value">2</span></div>
-    <div class="webinfo-item"><span class="webinfo-label">标签</span><span class="webinfo-value">3</span></div>
-    <div class="webinfo-item"><span class="webinfo-label">分类</span><span class="webinfo-value">0</span></div>
-    <div class="webinfo-item"><span class="webinfo-label">运行</span><span class="webinfo-value" id="webinfo-runtime" data-since="2024-01-01">--</span><span class="webinfo-unit">天</span></div>
-    <div class="webinfo-item" id="webinfo-busuanzi" hidden>
-      <span class="webinfo-label">访客</span><span class="webinfo-value" id="busuanzi_value_site_uv">--</span>
     </div>
-    <div class="webinfo-item" id="webinfo-busuanzi-pv" hidden>
-      <span class="webinfo-label">浏览</span><span class="webinfo-value" id="busuanzi_value_site_pv">--</span>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="返回顶部">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+</footer>
+
     </div>
-  </div>
-</div>
-
-  </div>
-</aside>
-
-      
-    </main>
-
-    <footer id="footer">
-      
-<div class="footer-wrap">
-  <div class="footer-icons" aria-hidden="true">
-    <span class="footer-decoration"><i class="fa-solid fa-feather"></i></span>
-  </div>
-  <div class="footer-content">
-    <div class="footer-info">
-      <p class="footer-site-name">Guo&#39;blog</p>
-      <p class="footer-tagline">Welcome to GUO</p>
-      <div class="footer-social">
-        
-
-
-
-
-
-<a class="social-icon" href="/atom.xml" title="RSS" rel="noopener"><i class="fa-solid fa-rss"></i></a>
-
-      </div>
-    </div>
-    <div class="footer-nav">
-      <a href="/">首页</a>
-      <a href="/archives/">归档</a>
-      <a href="/tags/">标签</a>
-      <a href="/categories/">分类</a>
-      <a href="/links/">友链</a>
-      <a href="/about/">关于</a>
-    </div>
-    
-    <div class="footer-extra"><a href="https://hexo.io">Powered by Gridea Pro</a></div>
-    
-  </div>
-  <div class="footer-bottom">
-    <p class="footer-copyright">© 2024 - {YEAR} · Liushen</p>
-    
-  </div>
-</div>
-
-    </footer>
-  </div>
-
-  
-<div id="rightside" class="rightside">
-  <div id="rightside-config-hide">
-    <button class="rightside-btn" data-action="toggle-toc" title="目录" hidden id="rightside-toc"><i class="fa-solid fa-list"></i></button>
-    <button class="rightside-btn" data-action="toggle-theme" title="切换主题"><i class="fa-solid fa-circle-half-stroke"></i></button>
-  </div>
-  
-  <button class="rightside-btn scroll-to-top" data-action="scroll-to-top" title="回到顶部" hidden><i class="fa-solid fa-angle-up"></i></button>
-  
-</div>
-
-
-
-  
-    
-<div id="search-modal" class="search-modal" hidden>
-  <div class="search-modal-backdrop" data-action="close-search"></div>
-  <div class="search-modal-panel">
-    <div class="search-modal-header">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input id="search-input" type="search" placeholder="搜索文章标题、标签、内容…" autocomplete="off" spellcheck="false">
-      <button class="search-modal-close" data-action="close-search" type="button" aria-label="关闭搜索"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="search-modal-body">
-      <ul id="search-results" class="search-results"></ul>
-      <div id="search-empty" class="search-empty" hidden>未找到匹配的内容</div>
-      <div id="search-tip" class="search-tip">输入关键词开始搜索，按 Esc 关闭</div>
-    </div>
-  </div>
-</div>
 
     
-<script id="search-index-data" type="application/json">
+
+<script id="printer-search-data" type="application/json">
 {
   "posts": [
-    
-      
-        
-        {
-          "title": "关于",
-          "link": "/post/about/",
-          "date": "2026-06-08T16:59:06+08:00",
-          "feature": "",
-          "tags": ["思考"],
-          "excerpt": "\r\n关于我\n嗨，我是 GUO ，一个人，嗯对一个人。\n坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。\n关于我的博客\n我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。\n「生活中踩过太多坑了，每次都想着\u0026quot;下次一定记下来\u0026quot;，然后下次又忘了。这个博客就是那个\u0026quot;下次\u0026quot;。」\n「没什么特别的原因，就是想..."
-        },
-        
-      
-        
-        {
-          "title": "写在期中考试后",
-          "link": "/post/xie-zai-qi-zhong-kao-shi-hou/",
-          "date": "2026-05-04T06:44:43+08:00",
-          "feature": "",
-          "tags": ["思考"],
-          "excerpt": "突然发现觉得我们很多人都活得很累\n为什么我们总把一次考试看得那么重\n重到会睡不着觉\n会在考完之后急切的对答案 想知道自己错在哪\n哪怕还没出成绩\n人不该被考试定义\n考试并不是一切\n看了一句话\n“如果所有人都循规蹈矩，那么第一个翻越围墙的人，应该算犯错还是发明了路？”\n感觉有点难过\n总觉得\n我们好像从小就走在一条被规划好的路上\n总有人告诉我们“该怎样”\n却很少有人问我们累不累\n可人本来就不是答题..."
-        }
-        
-      
-    
+    {
+      "title": "关于",
+      "link": "/post/about/",
+      "date": "2026-06-08T16:59:06+08:00",
+      "excerpt": "关于我\n嗨，我是 GUO ，一个人，嗯对一个人。\n坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。\n关于我的博客\n我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。\n「生活中踩...",
+      "tags": ["思考"]
+    },{
+      "title": "写在期中考试后",
+      "link": "/post/xie-zai-qi-zhong-kao-shi-hou/",
+      "date": "2026-05-04T06:44:43+08:00",
+      "excerpt": "突然发现觉得我们很多人都活得很累\n为什么我们总把一次考试看得那么重\n重到会睡不着觉\n会在考完之后急切的对答案 想知道自己错在哪\n哪怕还没出成绩\n人不该被考试定义\n考试并不是一切\n看了一句话\n“如果所有人都循规蹈矩，那么第一个翻越围墙的人，应...",
+      "tags": ["思考"]
+    }
+  ],
+  "tags": [
+    {
+      "name": "入门",
+      "link": "/tag/getting-started/",
+      "count": 1
+    },{
+      "name": "环境",
+      "link": "/tag/huan-jing/",
+      "count": 1
+    },{
+      "name": "思考",
+      "link": "/tag/si-kao/",
+      "count": 2
+    }
   ]
 }
 </script>
 
-  
 
-  
-  
-  
-  
-  
-  
-  
-  
-  <script id="liushen-config-data" type="application/json">
-{
-  "domain": "https://guojialelexiaoguo123-cloud.github.io",
-  "siteName": "Guo'blog",
-  "defaultTheme": "light",
-  "tocEnable": true,
-  "codeCopy": true,
-  "readingProgress": true,
-  "scrollToTop": true,
-  "heatmapEnable": true,
-  "randomPostEnable": true,
-  "subtitleSpeed": 120,
-  "subtitleList": "既然选择远方，当不负青春，砥砺前行。\n青春由磨砺而出彩，人生因奋斗而升华！\n但行前路，不负韶华！\n每一个裂缝都是为透出光而努力",
-  "navMenuJson": "[]"
-}
-  </script>
-  <script>
-    (function(){
-      try { window.LIUSHEN_CONFIG = JSON.parse(document.getElementById('liushen-config-data').textContent); }
-      catch (e) { window.LIUSHEN_CONFIG = {}; }
-    })();
-  </script>
-  <script src="/scripts/main.js" defer></script>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  
-  
-  
-<script>console.log("\n%c ✦ Gridea Pro v1.2.2 %c · Theme: liushen v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+
+    <script src="/scripts/main.js" defer></script>
+
+    
+
+    
+<script>console.log("\n%c ✦ Gridea Pro v1.2.2 %c · Theme: printer v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
 </body>
 </html>
