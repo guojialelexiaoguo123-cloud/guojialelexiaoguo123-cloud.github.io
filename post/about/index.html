@@ -1,60 +1,64 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN" data-theme="auto">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Gridea Pro · Jasmine Theme">
-  <meta name="generator" content="Gridea Pro 1.2.2">
-  <title>关于 | Guo&#39;blog</title>
-  <meta name="description" content="Welcome to GUO">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Guo&#39;blog">
-  <meta property="og:description" content="Welcome to GUO">
-  <meta property="og:image" content="/images/avatar.png">
-  <link rel="icon" href="/images/avatar.png">
-  <link rel="alternate" type="application/atom+xml" title="Guo&#39;blog" href="/atom.xml">
 
-  <link rel="stylesheet" href="/styles/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/tabler-icons.min.css">
-  <link rel="stylesheet" href="/styles/main.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#28df99">
+<meta name="generator" content="Gridea Pro · Cactus Theme">
 
-  
-  <style>@font-face{font-family:"MiSans VF";src:url("https://cdn.jsdelivr.net/gh/Sec-ant/MiSans-VF/dist/MiSansVF.woff2") format("woff2-variations");font-display:swap;}</style>
-  
 
-  <style id="jasmine-theme-vars">
-    :root {
-      --primary-color-rgba: 13, 110, 253;
-      --primary-bg-alpha: 0.2;
-      --bs-font-sans-serif: MiSans VF, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Microsoft YaHei, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+<meta name="generator" content="Gridea Pro 1.2.2">
+<title>Guo&#39;blog</title>
+<meta name="description" content="Welcome to GUO">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Guo&#39;blog">
+<meta property="og:title" content="Guo&#39;blog">
+<meta property="og:description" content="Welcome to GUO">
+<meta property="og:image" content="/images/avatar.png">
+<meta name="twitter:card" content="summary">
+
+
+
+
+<link rel="icon" href="/images/theme/圆角-1780910648519.png">
+<link rel="stylesheet" href="/styles/main.min.css">
+
+
+<style>
+:root { --accent: #28df99; }
+</style>
+
+
+<script>
+(function () {
+  try {
+    var pref = localStorage.getItem('cactus-theme');
+    var def = "auto";
+    var mode;
+    if (pref === 'dark' || pref === 'light') {
+      mode = pref;
+    } else if (def === 'auto') {
+      mode = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    } else {
+      mode = def;
     }
-    :root, [data-bs-theme=light] {
-      --bg-auto-rgb: 245, 245, 244;
-    }
-    :root, [data-bs-theme=dark] {
-      --bg-auto-rgb: 10, 12, 25;
-    }
-  </style>
-  
+    document.documentElement.setAttribute('data-theme', mode);
+  } catch (e) { /* localStorage 不可用时静默 */ }
+})();
+</script>
 
-  <script>
-    (function () {
-      var pref = "light";
-      try { var saved = localStorage.getItem('data-bs-theme'); if (saved) pref = saved; } catch (e) {}
-      var resolved = pref;
-      if (pref === 'auto') {
-        try { resolved = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'; }
-        catch (e) { resolved = 'light'; }
-      }
-      document.documentElement.dataset.themePref = pref;
-      // body 标签还没创建，先在 documentElement 上挂个临时 attr，body 一渲染立刻同步
-      document.documentElement.setAttribute('data-bs-theme', resolved);
-    })();
-  </script>
 
-  
-  
+
+
+
+
+
+
+
+
 <meta name="description" content="关于我 嗨，我是 GUO ，一个人，嗯对一个人。 坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。 关于我的博客 我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。 「生活中踩过太&amp;hellip;">
 <link rel="canonical" href="https://guojialelexiaoguo123-cloud.github.io/post/about/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"关于","url":"https://guojialelexiaoguo123-cloud.github.io/post/about/","description":"关于我 嗨，我是 GUO ，一个人，嗯对一个人。 坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。 关于我的博客 我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。 「生活中踩过太\u0026hellip;","datePublished":"2026-06-08T16:59:06+08:00","dateModified":"2026-06-08T17:57:31+08:00","author":{"@type":"Person","name":"Guo'blog"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Guo'blog"}}</script>
@@ -71,490 +75,146 @@
 <meta name="twitter:description" content="关于我 嗨，我是 GUO ，一个人，嗯对一个人。 坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。 关于我的博客 我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。 「生活中踩过太&amp;hellip;">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
-<body class="bg-auto" data-bs-theme="light">
-<script>document.body.setAttribute('data-bs-theme', document.documentElement.getAttribute('data-bs-theme'));</script>
+<body class="page-about">
 
-
-
-<div style="height: 60px" id="top" class="d-none d-lg-block"></div>
-<div class="container bg-body g-0 rounded shadow-sm">
-  <div class="row g-0">
-
-    
+<div class="content index width mx-auto px3 my4">
+  
+<header id="header" role="banner">
+  <a id="logo-link" href="/" aria-label="Guo&#39;blog">
+    <span id="logo" style="background-image: url('/images/theme/圆角-1780910648519.png')"></span>
+  </a>
+  <div id="title">
+    <h1><a href="/">Guo&#39;blog</a></h1>
+  </div>
+  <nav id="nav" role="navigation" aria-label="主导航">
+    <ul>
+      <li class="icon"><a href="#" id="nav-toggle" aria-label="展开菜单"><i class="ic ic-bars"></i></a></li>
+      <li><a href="/">Home</a></li>
       
-<div class="col-lg-1 d-none d-lg-block border-end border-light-subtle">
-  <div class="d-flex flex-column align-content-between justify-content-between pt-4 sticky-top" id="left">
-    <ul class="nav flex-column nav-pills gap-0 row-gap-3">
+        <li><a href="/">首页</a></li>
       
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/" title="Guo&#39;blog"><i class="ti ti-home"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">Guo&#39;blog</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/archives/" title="归档"><i class="ti ti-archive"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">归档</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/categories/" title="分类"><i class="ti ti-folder"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">分类</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/tags/" title="标签"><i class="ti ti-tags"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">标签</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/memos/" title="闪念"><i class="ti ti-bubble-text"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">闪念</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/links/" title="友链"><i class="ti ti-link"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">友链</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="/about/" title="关于"><i class="ti ti-user"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">关于</span>
-      </li>
+        <li><a href="/post">博客</a></li>
+      
+        <li><a href="/memos">闪念</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/tags">标签</a></li>
+      
+        <li><a href="/post/about">关于</a></li>
+      
+        <li><a href="/links">友链</a></li>
+      
+      
+        <li><a href="#" class="search-trigger" aria-label="搜索"><i class="ic ic-search"></i></a></li>
+      
+      <li><a href="#" id="theme-toggle" aria-label="切换日间/夜间模式"><i class="ic ic-moon"></i></a></li>
     </ul>
-    <ul class="nav flex-column nav-pills gap-0 row-gap-3 sticky-bottom bottom-0 mb-4">
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" data-action="toggle-theme" href="javascript:void(0)" title="切换模式"><i class="ti ti-sun-moon px-3 py-1 rounded"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">切换模式</span>
-      </li>
-      <li class="nav-item d-flex justify-content-center position-relative">
-        <a class="nav-link p-0 d-flex align-items-center justify-content-center" href="#top" data-action="scroll-to-top-anchor" title="返回顶部"><i class="ti ti-chevrons-up px-3 py-1 rounded"></i></a>
-        <span class="position-absolute nav-item-title text-nowrap">返回顶部</span>
-      </li>
-    </ul>
+  </nav>
+</header>
+
+  <main class="site-main" id="wrapper">
+    
+<section id="about-page" class="article-content content">
+  <span class="h1"><span class="hash-prefix"></span>About</span>
+
+  <div class="about-card">
+    
+      <img class="about-avatar" src="/images/avatar.png" alt="Guo&#39;blog">
+    
+    <div class="about-text">
+      <h2 class="about-name">Guo&#39;blog</h2>
+      
+        <p class="about-desc">Welcome to GUO</p>
+      
+      
+        <ul id="sociallinks" class="hero-social-inline" data-source="github|github.com/guojialelexiaoguo123-cloud"></ul>
+      
+    </div>
   </div>
+
+  
+  
+    <div class="article-content"><!-- 这是一个关于页面的模板，你可以根据自己的风格随意修改。开始写你自己的故事吧。 -->
+<h3 id="heading">关于我</h3>
+<p>嗨，我是 GUO ，一个人，嗯对一个人。</p>
+<p>坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。</p>
+<h3 id="heading-1">关于我的博客</h3>
+<p>我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。</p>
+<p>「生活中踩过太多坑了，每次都想着&quot;下次一定记下来&quot;，然后下次又忘了。这个博客就是那个&quot;下次&quot;。」</p>
+<p>「没什么特别的原因，就是想在互联网上有一个属于自己的小角落。」</p>
+<h3 id="heading-2">你能在这里看到什么</h3>
+<ul>
+<li>技术笔记</li>
+<li>偶尔写点生活思考</li>
+<li>一些不知道该归到哪一类的碎碎念</li>
+</ul>
+<!-- 改成你自己打算写的方向就好 -->
+<h3 id="heading-3">找到我</h3>
+<ul>
+<li>GitHub: <a href="https://github.com/guojialelexiaoguo123-cloud">guojialelexiaoguo123</a></li>
+<li>Email: <a href="mailto:guojialelexiaoguo123@gmail.com">guojialelexiaoguo123@gmail.com</a></li>
+</ul>
+<!-- 换成你自己的链接，也可以加上 Twitter、掘金、知乎、微信公众号等 -->
+<hr />
+<!-- more --></div>
+  
+</section>
+
+  </main>
 </div>
 
-    
-
-    <div class="col-md-12 col-lg-8" id="middle">
-      
-<nav class="navbar navbar-expand-lg border-bottom py-0 fw-medium sticky-top navbar-background border-light-subtle bg-body bg-opacity-75">
-  <div class="container-fluid p-lg-4 px-4 py-3" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-    
-    <a class="navbar-brand d-block d-lg-none nav-link p-0 d-flex align-items-center justify-content-center column-gap-1" href="/">
-      
-      Guo&#39;blog
-    </a>
-    <div class="d-flex d-block d-lg-none">
-      <a class="nav-link p-0 d-flex align-items-center justify-content-center" data-action="toggle-theme" href="javascript:void(0)" aria-label="切换模式"><i class="ti ti-sun-moon px-3 py-1 rounded fs-5"></i></a>
-      <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-navbar" aria-controls="mobile-navbar" aria-label="打开菜单">
-        <i class="ti ti-menu-2 fs-4"></i>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse pt-3 pt-lg-0 overflow-x-auto" id="navbarNav">
-      <ul class="navbar-nav column-gap-5 me-auto flex-lg-wrap flex-nowrap list-group-horizontal" id="navbarNavLeft">
-        <li class="nav-item">
-          <a class="nav-link px-0 py-0 text-nowrap" href="/">首页</a>
-        </li>
-        
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/">首页</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/post">博客</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/memos">闪念</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/archives">归档</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/tags">标签</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/post/about">关于</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link px-0 py-0 text-nowrap" href="/links">友链</a>
-            </li>
-          
-        
-      </ul>
-      
-      <ul class="nav column-gap-4 ms-auto d-none d-lg-block">
-        <li class="nav-item">
-          <a class="nav-link p-0 d-flex align-items-center justify-content-center px-2 py-2 rounded-circle" id="form-search-icon" data-action="open-search" href="javascript:void(0)" title="搜索（Cmd/Ctrl+K）" aria-label="搜索">
-            <i class="ti ti-search"></i>
-          </a>
-        </li>
-      </ul>
+<div class="footer-wrap mx-auto px3 my5">
+  <footer id="footer">
+    <div class="footer-left">
+      &copy; 2026 Guo&#39;blog
+      &nbsp;·&nbsp; Powered by <a href="https://github.com/Gridea-Pro/gridea-pro" target="_blank" rel="noopener">Gridea Pro</a>
+      &nbsp;·&nbsp; <a href="https://github.com/Gridea-Pro/gridea-pro-themes" target="_blank" rel="noopener">Cactus</a>
       
     </div>
-  </div>
-</nav>
-
-      <div class="container-fluid p-4 d-flex flex-column row-gap-3">
-        
-<article class="card border-0 py-3 col-12">
-  <div class="card-body p-0">
-    <div class="text-center pb-3 border-bottom border-light-subtle">
-      <img src="/images/avatar.png" alt="Guo&#39;blog" class="rounded mb-3" width="96" height="96">
-      <h2 class="fs-3 mb-1">Guo&#39;blog</h2>
-      <p class="text-body-secondary mb-0">Welcome to GUO</p>
-    </div>
-    <div id="post-content" class="lh-lg pt-4">
-      
-        <h2>关于本站</h2>
-        <p>这是 <strong>Guo&#39;blog</strong> 的关于页面。</p>
-        <p>你可以在 Gridea Pro 的「页面 → 关于」里编辑这块内容。如果创建了 about 页面，它的正文会自动显示在这里。</p>
-        <h3>这个主题</h3>
-        <p>「Jasmine」主题复刻自 <a href="https://github.com/liaocp666/Jasmine" target="_blank" rel="noopener">liaocp666/Jasmine</a>（Typecho），由 Gridea Pro 主题团队迁移到 Jinja2 模板引擎，沿用上游 GPL-3.0 许可。</p>
-      
-    </div>
-  </div>
-</article>
-
-      </div>
-    </div>
-
-    
-      
-<div class="col-lg-3 sticky-bottom d-none d-lg-block border-start border-light-subtle" id="right">
-  
-  <div class="container-fluid p-4 border-bottom border-light-subtle">
-    <div class="row gap-2">
-      <div class="col-12">
-        <p class="text-body-secondary mb-0 fs-6 py-1">
-          Welcome to GUO
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="sticky-top">
-    
-<div class="container-fluid p-4 mt-3 border-bottom border-light-subtle">
-  <div class="row gap-2">
-    <div class="col-12">
-      <div class="col-12 d-flex gap-1 align-content-center"><i class="ti ti-chart-bar lh-base"></i><h6 class="lh-base mb-0">最近文章</h6></div>
-    </div>
-    <div class="col-12">
-      <div class="text-body-secondary" style="line-height: 32px">
-        <ul class="list-group list-group-flush">
-          
-            
-              
-              <li class="list-group-item p-0 border-0 text-truncate"><a href="/post/about/" title="关于">关于</a></li>
-              
-            
-              
-              <li class="list-group-item p-0 border-0 text-truncate"><a href="/post/xie-zai-qi-zhong-kao-shi-hou/" title="写在期中考试后">写在期中考试后</a></li>
-              
-            
-              
-              <li class="list-group-item p-0 border-0 text-truncate"><a href="/post/xin-ren-di-yi-bu-nodejs/" title="新人第一步 node.js">新人第一步 node.js</a></li>
-              
-            
-              
-              <li class="list-group-item p-0 border-0 text-truncate"><a href="/post/xie-zai-zui-qian/" title="写在最前">写在最前</a></li>
-              
-            
-          
+    <div class="footer-right">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">首页</a></li><li><a href="/post">博客</a></li><li><a href="/memos">闪念</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/post/about">关于</a></li><li><a href="/links">友链</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </div>
-</div>
-
-    
-<div class="container-fluid p-4 mt-3 border-bottom border-light-subtle">
-  <div class="row gap-2">
-    <div class="col-12 d-flex gap-1 align-content-center justify-content-start fw-medium">
-      <i class="ti ti-tags lh-base"></i><h6 class="lh-base mb-0">热门标签</h6>
-    </div>
-    <div class="col-12">
-      <div class="text-body-secondary" style="line-height: 32px">
-        <ul class="list-group flex-wrap list-group-horizontal row-gap-1 column-gap-3">
-          
-            
-              
-              
-              <li class="list-group-item p-0 border-0"><a href="/tag/getting-started/" title="入门 (1 篇)">入门</a></li>
-              
-            
-              
-              
-              <li class="list-group-item p-0 border-0"><a href="/tag/huan-jing/" title="环境 (1 篇)">环境</a></li>
-              
-            
-              
-              
-              <li class="list-group-item p-0 border-0"><a href="/tag/si-kao/" title="思考 (2 篇)">思考</a></li>
-              
-            
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-
-
-<div class="container-fluid p-4 mt-3 border-bottom border-light-subtle">
-  <div class="row gap-2">
-    <div class="col-12 d-flex gap-1 align-content-center justify-content-start fw-medium">
-      <i class="ti ti-friends lh-base"></i><h6 class="lh-base mb-0">友情链接</h6>
-    </div>
-    <div class="col-12">
-      <div class="text-body-secondary" style="line-height: 32px">
-        <ul class="list-group list-group-flush">
-          
-            
-            
-            
-            <li class="list-group-item p-0 border-0 text-truncate"><a href="www.baidu.com" target="_blank" rel="noopener" title="百度">百度</a></li>
-            
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    
-<div class="container-fluid p-4 mt-3">
-  <div class="row gap-2">
-    <div class="col-12 d-flex gap-1 align-content-center justify-content-start fw-medium">
-      <i class="ti ti-link lh-base"></i><h6 class="lh-base mb-0">网站链接</h6>
-    </div>
-    <div class="col-12">
-      <div class="text-body-secondary" style="line-height: 32px">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item p-0 border-0"><a href="/atom.xml" title="RSS 订阅">RSS 订阅</a></li>
-          <li class="list-group-item p-0 border-0"><a href="/sitemap.xml" title="网站地图">网站地图</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
-
-    
-
-  </div>
-</div>
-
-<div style="height: 80px"></div>
-
-<div class="container text-body-tertiary">
-  <div class="row">
-    <div class="col-12 d-flex column-gap-2 flex-wrap">
-      <span><i class="ti ti-copyright"></i> Guo&#39;blog. All Rights Reserved.</span>
-      <span><a href="https://github.com/Gridea-Pro/gridea-pro" rel="nofollow" target="_blank">Powered by Gridea Pro · Theme Jasmine</a></span>
-    </div>
-    
-  </div>
-</div>
-
-
-<div class="offcanvas offcanvas-start w-75" tabindex="-1" id="mobile-navbar" aria-labelledby="mobile-navbarLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="mobile-navbarLabel">Guo&#39;blog</h5>
-    <button type="button" class="btn-close lh-sm" data-bs-dismiss="offcanvas" aria-label="关闭"><i class="ti ti-x"></i></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="d-flex flex-column row-gap-4 align-content-between justify-content-between h-100">
-      <div class="d-flex flex-column row-gap-4 navbar-nav">
-        <div class="list-group">
-          <a class="list-group-item list-group-item-action" href="/">首页</a>
-          
-            
-            <a class="list-group-item list-group-item-action" href="/">首页</a>
-            
-            <a class="list-group-item list-group-item-action" href="/post">博客</a>
-            
-            <a class="list-group-item list-group-item-action" href="/memos">闪念</a>
-            
-            <a class="list-group-item list-group-item-action" href="/archives">归档</a>
-            
-            <a class="list-group-item list-group-item-action" href="/tags">标签</a>
-            
-            <a class="list-group-item list-group-item-action" href="/post/about">关于</a>
-            
-            <a class="list-group-item list-group-item-action" href="/links">友链</a>
-            
-          
-        </div>
-        
-        <button class="btn btn-outline-secondary d-flex column-gap-2 justify-content-center" type="button" data-action="open-search" data-bs-dismiss="offcanvas">
-          <i class="ti ti-search"></i><span>搜索</span>
-        </button>
-        
-      </div>
-      <div class="d-flex column-gap-3 justify-content-around bg-secondary-subtle rounded py-2 px-3 flex-wrap">
-        <a href="/" title="首页" aria-label="首页"><i class="ti ti-home"></i></a>
-        <a href="/archives/" title="归档" aria-label="归档"><i class="ti ti-archive"></i></a>
-        <a href="/categories/" title="分类" aria-label="分类"><i class="ti ti-folder"></i></a>
-        <a href="/tags/" title="标签" aria-label="标签"><i class="ti ti-tags"></i></a>
-        <a href="/memos/" title="闪念" aria-label="闪念"><i class="ti ti-bubble-text"></i></a>
-        <a href="/about/" title="关于" aria-label="关于"><i class="ti ti-user"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  
-<div class="search-modal" id="search-modal" hidden>
-  <div class="search-modal-backdrop" data-action="close-search"></div>
-  <div class="search-modal-panel bg-body rounded shadow">
-    <div class="search-modal-header d-flex align-items-center column-gap-2 px-3 py-3 border-bottom border-light-subtle">
-      <i class="ti ti-search fs-5 text-body-tertiary"></i>
-      <input id="search-input" type="search" class="form-control border-0 fs-6" placeholder="搜索文章标题、标签、内容…" autocomplete="off" spellcheck="false">
-      <kbd class="d-none d-sm-inline-block text-body-tertiary fs-7 me-2">ESC</kbd>
-      <button class="btn btn-sm btn-light rounded-circle" data-action="close-search" type="button" aria-label="关闭"><i class="ti ti-x"></i></button>
-    </div>
-    <div class="search-modal-body p-2">
-      <ul class="search-results list-unstyled mb-0" id="search-results"></ul>
-      <div class="search-empty text-center py-4 text-body-tertiary" id="search-empty" hidden>
-        <i class="ti ti-search-off fs-3 d-block mb-2"></i>未找到匹配的内容
-      </div>
-      <div class="search-tip text-center py-4 text-body-tertiary" id="search-tip">
-        输入关键词开始搜索 · 按 <kbd>↑↓</kbd> 选择 · 按 <kbd>Enter</kbd> 进入 · 按 <kbd>ESC</kbd> 关闭
-      </div>
-    </div>
-  </div>
-</div>
-
-  
-<div id="search-index-data" hidden>
-  
-    
-      
-      <article
-        data-link="/post/about/"
-        data-title="关于"
-        data-date="2026-06-08T16:59:06+08:00"
-        data-feature=""
-        data-tags="思考"
-        data-excerpt="
-关于我
-嗨，我是 GUO ，一个人，嗯对一个人。
-坐标山东，高中生。白天上课，晚上写点乱七八糟的东西。
-关于我的博客
-我发现自己想的很多事情，不写下来就会忘。写博客不是为了给别人看，是怕将来的自己想不起来现在的自己在想什么。
-「生活中踩过太多坑了，每次都想着&amp;quot;下次一定记下来&amp;quot;，然后下次又忘了。这个博客就是那个&amp;quot;下次&amp;quot;。」
-「没什么特别的原因，就是想..."
-      ></article>
-      
-    
-      
-      <article
-        data-link="/post/xie-zai-qi-zhong-kao-shi-hou/"
-        data-title="写在期中考试后"
-        data-date="2026-05-04T06:44:43+08:00"
-        data-feature=""
-        data-tags="思考"
-        data-excerpt="突然发现觉得我们很多人都活得很累
-为什么我们总把一次考试看得那么重
-重到会睡不着觉
-会在考完之后急切的对答案 想知道自己错在哪
-哪怕还没出成绩
-人不该被考试定义
-考试并不是一切
-看了一句话
-“如果所有人都循规蹈矩，那么第一个翻越围墙的人，应该算犯错还是发明了路？”
-感觉有点难过
-总觉得
-我们好像从小就走在一条被规划好的路上
-总有人告诉我们“该怎样”
-却很少有人问我们累不累
-可人本来就不是答题..."
-      ></article>
-      
-    
-      
-      <article
-        data-link="/post/xin-ren-di-yi-bu-nodejs/"
-        data-title="新人第一步 node.js"
-        data-date="2026-04-08T17:43:47+08:00"
-        data-feature=""
-        data-tags="环境"
-        data-excerpt="
-Node.js 是基于 Chrome V8 引擎的 JavaScript 运行环境，让我们可以在服务端运行 JavaScript 代码，也是前端开发、后端项目搭建必不可少的工具。本篇教程手把手教你在Windows、Mac、Linux三大系统安装 Node.js，全程零基础可操作，看完就能顺利安装成功。
-一、Node.js 版本选择
-Node.js 分为两个版本，新手建议直接选LTS 长期支..."
-      ></article>
-      
-    
-      
-      <article
-        data-link="/post/xie-zai-zui-qian/"
-        data-title="写在最前"
-        data-date="2026-03-05T17:41:41+08:00"
-        data-feature=""
-        data-tags="入门"
-        data-excerpt="欢迎来到我的个人小站，开篇碎碎念
-大家好，欢迎访问我的个人博客网站。
-这是我第一次自己从零搭建个人博客，从挑选域名、对比后缀、注册域名，再到接入 Cloudflare 解析、配置网站，前前后后折腾了好几天，终于正式上线了。
-为什么要建这个博客
-我只是一名普通高中生，不是什么技术大佬，也不会高深的编程知识。
-单纯就是喜欢折腾、喜欢捣鼓这些小东西，想拥有一个完全属于自己的网络小角落。
-不用受社交..."
-      ></article>
-      
-    
-  
+  </footer>
 </div>
 
 
 
 
-<button class="btn btn-primary rounded-circle scroll-to-top" id="scroll-to-top" type="button" aria-label="回到顶部" hidden>
-  <i class="ti ti-chevrons-up"></i>
-</button>
+
+<div class="searchbox" id="searchbox" aria-hidden="true" role="dialog" aria-label="站内搜索">
+  <div class="searchbox-mask" data-role="search-close"></div>
+  <div class="searchbox-container">
+    <div class="searchbox-input-wrapper">
+      <span class="searchbox-prefix"><i class="ic ic-search"></i></span>
+      <input id="search-input" class="searchbox-input" type="search" autocomplete="off" placeholder="输入关键字搜索文章…">
+      <button class="searchbox-close" data-role="search-close" aria-label="关闭"><i class="ic ic-close"></i></button>
+    </div>
+    <ul class="searchbox-results" id="search-results" role="listbox"></ul>
+    <div class="searchbox-hint" id="search-hint">支持搜索标题与正文 · 按 ESC 关闭</div>
+  </div>
+</div>
 
 
-<div id="jasmine-config-data" hidden
-  data-domain="https://guojialelexiaoguo123-cloud.github.io"
-  data-site-name="Guo&#39;blog"
-  data-toc="1"
-  data-code-copy="1"
-  data-reading-progress="0"
-  data-scroll-to-top="1"
-  data-heatmap="1"
-  data-search="1"
-></div>
+
 <script>
-  (function () {
-    var d = document.getElementById('jasmine-config-data').dataset;
-    window.JASMINE_CONFIG = {
-      domain: d.domain || '',
-      siteName: d.siteName || '',
-      tocEnable: d.toc === '1',
-      codeCopy: d.codeCopy === '1',
-      readingProgress: d.readingProgress === '1',
-      scrollToTop: d.scrollToTop === '1',
-      heatmapEnable: d.heatmap === '1',
-      searchEnable: d.search === '1'
-    };
-  })();
+window.__CACTUS__ = {
+  domain: "https://guojialelexiaoguo123-cloud.github.io",
+  themeMode: "auto",
+  searchProvider: "local",
+  showSearch: true,
+  showToc: true,
+  showPrevNext: true,
+  memosHeatmap: true
+};
 </script>
 <script src="/scripts/main.js" defer></script>
 
-
-
-
-<script>console.log("\n%c ✦ Gridea Pro v1.2.2 %c · Theme: jasmine v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+<script>console.log("\n%c ✦ Gridea Pro v1.2.2 %c · Theme: cactus v1.0.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
 </body>
 </html>
